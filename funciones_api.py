@@ -21,7 +21,7 @@ def peliculas_duracion(pelicula:str):
     pelicula_info = df[df['title'] == pelicula]
     duracion = pelicula_info['runtime'].values[0]
     anio = pelicula_info['release_year'].values[0]
-    respuesta = int(duracion)
+    respuesta = duracion
     
     return {'pelicula':pelicula, 'duracion':respuesta, 'anio':anio}
 
