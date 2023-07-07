@@ -21,9 +21,10 @@ def peliculas_duracion(pelicula:str):
     pelicula_info = df[df['title'] == pelicula]
     duracion = pelicula_info['runtime'].values[0]
     anio = pelicula_info['release_year'].values[0]
-    respuesta = duracion
+    respuesta = int(duracion)
+    anio_respuesta = int(anio)
     
-    return {'pelicula':pelicula, 'duracion':respuesta, 'anio':anio}
+    return {'pelicula':pelicula, 'duracion':respuesta, 'anio':anio_respuesta}
 
 
 @app.get('/franquicia/{franquicia}')
