@@ -2,7 +2,7 @@ from fastapi import FastAPI
 import pandas as pd
 
 
-df = pd.read_csv('C:/Users/Alan/Documents/PI_ML_OPS_datase/datasets_nuevos/movies_dataset_new.csv') #traemos el dataset
+df = pd.read_csv('movies_dataset_new.csv') #traemos el dataset
 app = FastAPI()   # Instanciamos FastAPI
 
 
