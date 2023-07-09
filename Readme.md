@@ -1,4 +1,4 @@
-# Movies&FastAPI
+# Movies Repository
 
 Machine Learning Operations (MLOps)
 
