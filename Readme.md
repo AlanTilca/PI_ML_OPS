@@ -8,8 +8,8 @@ Este proyecto se enfoca en el tratamiento de un Dataset de películas y el despl
 
 ## Características principales
 
-- **FastAPI**: un framework de desarrollo web de alto rendimiento para construir los endpoints del proyecto ([link](https://fastapi.tiangolo.com)).
-- **Render**: una plataforma de alojamiento y despliegue de aplicaciones web, para implementar y alojar el proyecto ([link](https://render.com)).
+- **FastAPI**: un framework de desarrollo web de alto rendimiento para construir los endpoints del proyecto ([enlace](https://fastapi.tiangolo.com)).
+- **Render**: una plataforma de alojamiento y despliegue de aplicaciones web, para implementar y alojar el proyecto ([enlace](https://render.com)).
 - **Datasets**: Se hace uso de los Datasets disponibles en el siguiente enlace: [Datasets](https://drive.google.com/drive/folders/1nvSjC2JWUH48o3pb8xlKofi8SNHuNWeu) para el análisis y entrenamiento del modelo de recomendación de películas.
 - **Diccionario de datos**: El diccionario de datos utilizado se encuentra disponible en el siguiente enlace: [Diccionario de datos](https://docs.google.com/spreadsheets/d/1QkHH5er-74Bpk122tJxy_0D49pJMIwKLurByOfmxzho/edit#gid=0) y proporciona información sobre las variables y su significado en el Dataset **movies_dataset**.
 
@@ -38,7 +38,7 @@ Esta API devuelve la cantidad de películas en el idioma especificado.
 - **Método**: GET
 - **Parámetros**:
   - `idioma`: El idioma de la cantidad de películas que deseas obtener.
-- **Ejemplo de uso**: `https://movies-repository.onrender.com/peliculas_idioma/English`
+- **Ejemplo de uso**: `https://movies-repository.onrender.com/peliculas_idioma/en`
 
 ### API: `peliculas_duracion`
 
