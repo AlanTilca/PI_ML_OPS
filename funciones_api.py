@@ -85,32 +85,12 @@ def get_director(nombre_director:str):
 def recomendacion(titulo:str):
     '''Ingresas un nombre de pelicula y te recomienda las similares en una lista'''  
     titulo = titulo.lower().strip()
-
-    # Verificar si el título está en la columna 'title' del dataframe df
     pelicula = df[df['title'].str.lower().str.strip() == titulo]
-
-    if pelicula.empty:
-        return f"No se encontró información para la película '{titulo}'."
-
-    # Obtener las características de género de la película de interés
-    #generos_pelicula = pelicula['genres'].iloc[0].split(',')
-
-    # Obtener la matriz de características de género de todas las películas
     generos = df['genres'].str.get_dummies(',')
-
-    # Obtener la matriz de puntuaciones de todas las películas
     puntuaciones = df[['vote_average', 'vote_count']].values
-
-    # Combinar las matrices de género y puntuaciones
     caracteristicas = pd.concat([generos, pd.DataFrame(puntuaciones, columns=['vote_average', 'vote_count'])], axis=1)
-
-    # Calcular la similitud de coseno entre la película ingresada y todas las demás películas basada en características
     similitudes = cosine_similarity(caracteristicas.loc[pelicula.index], caracteristicas)
-
-    # Obtener los índices de las películas más similares (excluyendo la película ingresada)
     indices_similares = similitudes.argsort()[0][::-1][1:]
-
-    # Obtener los títulos de las 5 películas más similares
     peliculas_similares = df.iloc[indices_similares][:5]['title'].tolist()
-
+    
     return {'lista_recomendada': peliculas_similares}
