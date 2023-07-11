@@ -109,7 +109,7 @@ Utiliza estas URLs en tu navegador web.
 
 Otra opción es usar la interfaz gráfica que nos proporciona FastAPI para llamar a las funciones: https://movies-repository.onrender.com/docs
 
-![1](images\fastapi_ui.png)
-![2](images\tryitout.png)
-![3](images\executeapi.png)
-![4](images\result.png)
+![1](images/fastapi_ui.png)
+![2](images/tryitout.png)
+![3](images/executeapi.png)
+![4](images/result.png)
