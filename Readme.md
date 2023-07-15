@@ -1,6 +1,6 @@
 # Movies Repository
 
-Machine Learning Operations (MLOps)
+Data Engineering and Machine Learning Operations (MLOps)
 
 ## Descripción
 
